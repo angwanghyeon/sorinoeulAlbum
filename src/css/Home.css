@@ -6,10 +6,25 @@
     width: auto;
     height: 120px;
     background-color: beige;
+    margin-bottom: 20px;
 }
 .logo{
     width: 100px;
     height: 110px;
+}
+.box1{
+    text-align: right;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80vw;
+    height: 400px;
+}
+.lee{
+    margin: 10px auto;
+    width: 200px;
+    height: 200px;
+    right: -50px;
 }
 
 
@@ -22,5 +37,14 @@
         width: auto;
         height: 100px;
         background-color: beige;
+    }
+    .logo{
+        width: 100px;
+        height: 110px;
+    }
+    .box1{
+        border: 1px solid black;
+        width: 400px;
+        height: 400px;
     }
 }
