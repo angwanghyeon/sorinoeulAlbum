@@ -1,0 +1,26 @@
+.container{
+    width: auto;
+    height: 2500px;
+}
+.nav-bar{
+    width: auto;
+    height: 120px;
+    background-color: beige;
+}
+.logo{
+    width: 100px;
+    height: 110px;
+}
+
+
+@media screen and (Max-width = 767px) {
+    .container{
+        width: auto;
+        height: 2500px;
+    }
+    .nav-bar{
+        width: auto;
+        height: 100px;
+        background-color: beige;
+    }
+}
