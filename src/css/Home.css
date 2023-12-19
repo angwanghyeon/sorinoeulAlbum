@@ -1,50 +1,226 @@
-.container{
-    width: auto;
-    height: 2500px;
+.container {
+  width: auto;
+  height: 3500px;
+  cursor: pointer;
 }
-.nav-bar{
+.nav-bar {
+  width: auto;
+  height: 100px;
+  background-color: beige;
+}
+.logo {
+  width: 100px;
+  height: 110px;
+}
+.box1 {
+  text-align: right;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin: 20px auto;
+  width: 80vw;
+  height: 460px;
+  position: relative;
+}
+.lee-box {
+  width: 210px;
+  height: 400px;
+  position: absolute;
+  right: 5px;
+}
+.lee {
+  margin: 10px auto;
+  width: 200px;
+  height: 200px;
+  right: -50px;
+}
+.lee-sign {
+  width: 200px;
+  height: 150px;
+  bottom: 80px;
+  right: 0px;
+  position: absolute;
+}
+.speech-box {
+  text-align: left;
+  margin: 0 auto;
+  width: 70vw;
+  height: 150px;
+  position: absolute;
+  left: 5vw;
+  top: 300px;
+}
+.sorinoeul-introduction {
+  width: 94vw;
+  margin: 0 auto;
+}
+.album-cover-box {
+  width: 340px;
+  height: 340px;
+  margin: 20px auto;
+  border: 1px solid lightgray;
+  border-radius: 25px;
+  box-shadow: 0px 5px 5px 2px #ccc;
+}
+.album-cover {
+  width: 100%;
+}
+.track-list-container {
+  margin: 50px auto;
+  width: 100%;
+}
+
+.track-list {
+  width: 90vw;
+  display: grid;
+  grid-template-columns: 50px 250px 50px 50px;
+}
+.track-number {
+  text-align: center;
+}
+.mp3 {
+  width: 40px;
+  height: 40px;
+}
+.document {
+  width: 40px;
+  height: 40px;
+}
+.album-credit {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.credit-p {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+.credit-p b {
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
     width: auto;
-    height: 120px;
+    height: 3500px;
+  }
+  .nav-bar {
+    width: auto;
+    height: 100px;
     background-color: beige;
-    margin-bottom: 20px;
-}
-.logo{
+  }
+  .logo {
     width: 100px;
     height: 110px;
-}
-.box1{
+  }
+  .box1 {
     text-align: right;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 25px;
     margin: 20px auto;
     width: 80vw;
+    height: 460px;
+    position: relative;
+  }
+  .lee-box {
+    width: 210px;
     height: 400px;
-}
-.lee{
+    position: absolute;
+    right: 5px;
+  }
+  .lee {
     margin: 10px auto;
     width: 200px;
     height: 200px;
     right: -50px;
+  }
+  .lee-sign {
+    width: 200px;
+    height: 150px;
+    bottom: 80px;
+    right: 0px;
+    position: absolute;
+  }
+  .speech-box {
+    text-align: left;
+    margin: 0 auto;
+    width: 70vw;
+    height: 150px;
+    position: absolute;
+    left: 5vw;
+    top: 300px;
+  }
+  .sorinoeul-introduction {
+    width: 94vw;
+    margin: 0 auto;
+  }
+  .album-cover-box {
+    width: 340px;
+    height: 340px;
+    margin: 20px auto;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    box-shadow: 0px 5px 5px 2px #ccc;
+  }
+  .album-cover {
+    width: 100%;
+  }
+  .track-list-container {
+    margin: 50px auto;
+    width: 100%;
+  }
+  .Track-h1 {
+    margin-left: 15px;
+  }
+  .track-list {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 50px 250px 50px 50px;
+  }
+  .track-number {
+    text-align: center;
+  }
+  .mp3 {
+    width: 40px;
+    height: 40px;
+  }
+  .document {
+    width: 40px;
+    height: 40px;
+  }
+  .album-credit {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .credit-p {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 8px;
+  }
+  #credit-s{
+    display: grid;
+    grid-template-columns: 65vw 30vw;
+  }
+  .credit-p b {
+    margin-right: 8px;
+  }
+  .application{
+    width: 100vw;
+  }
+  .application-title{
+    margin-left: 15px;
+  }
+  .sono-char{
+    width: 80vw;
+    height: 80vw;
+    margin: 0 auto;
+  }
 }
-
-
-@media screen and (Max-width = 767px) {
-    .container{
-        width: auto;
-        height: 2500px;
-    }
-    .nav-bar{
-        width: auto;
-        height: 100px;
-        background-color: beige;
-    }
-    .logo{
-        width: 100px;
-        height: 110px;
-    }
-    .box1{
-        border: 1px solid black;
-        width: 400px;
-        height: 400px;
-    }
+@media screen and (max-width:767px) and (min-width:468px) {
+    #credit-s{
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 8px;
+      }
 }
