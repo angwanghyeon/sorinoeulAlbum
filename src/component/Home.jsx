@@ -1,9 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../css/Home.css";
 
 const Home = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleScroll = () => {
+    const scrollTop = window.scrollY;
+    setIsVisible(scrollTop > 100); // 예: 스크롤이 100px 이상이면 버튼 표시
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // 부드러운 스크롤 효과를 위해 추가
+    });
+  };
+
+  const handleNavigate = () => {
+    window.location.href = 'https://drive.google.com/file/d/1A87zuH6gP2gN9qV1AKYbPOAqlU4GpqaA/view?usp=sharing';
+  }
+  
   return (
     <div className="container">
+      {isVisible && (
+        <button className="top-button" onClick={scrollToTop} style={{ position: 'fixed', bottom: '20px', right: '20px', zIndex: '1000' , borderRadius:'50%'}}>
+          Top
+        </button>
+      )}
       {/* <nav className="nav-bar">
         <img src="image/logo.png" alt="소리노을-로고" className="logo" />
       </nav> */}
@@ -53,7 +83,9 @@ const Home = () => {
             </a>
           </div>
           <div>
+            <a href="https://drive.google.com/file/d/11AMY2zv5rIq330sxpFD_U74OfVGmRPWc/view?usp=sharing">
             <img src="image/png/document.png" alt="악보" className="document" />
+            </a>
           </div>
         </div>
         <div className="track-content">
@@ -75,10 +107,14 @@ const Home = () => {
             <div>작사.작곡 고동환 / 편곡 이지혜</div>
           </div>
           <div>
-            <img src="image/png/mp3.png" alt="mp3" className="mp3" />
+            <a href="https://drive.google.com/file/d/1-HSN1b5tl9gP2FedCp6fQ4pofZ8q0MvQ/view?usp=sharing">
+              <img src="image/png/mp3.png" alt="mp3" className="mp3" />
+            </a>
           </div>
           <div>
-            <img src="image/png/document.png" alt="악보" className="document" />
+            <a href="https://drive.google.com/file/d/110xzqn6HbvRYOOAvQXF3jYyW03ttQ2Pz/view?usp=sharing">
+              <img src="image/png/document.png" alt="악보" className="document" />
+            </a>
           </div>
         </div>
         <div className="track-content">
@@ -100,10 +136,14 @@ const Home = () => {
             <div>찬송가 310장 / 편곡 최현경 신연태</div>
           </div>
           <div>
-            <img src="image/png/mp3.png" alt="mp3" className="mp3" />
+            <a href="https://drive.google.com/file/d/1-UCvYa6nRc3WI7xHfdoEI5AIH8z2UKHX/view?usp=sharing">
+              <img src="image/png/mp3.png" alt="mp3" className="mp3" />
+            </a>
           </div>
           <div>
+            <a href="https://drive.google.com/file/d/10hywnntRGH3n7flDr5cJK2msvK2F4-Z6/view?usp=sharing">
             <img src="image/png/document.png" alt="악보" className="document" />
+            </a>
           </div>
         </div>
         <div className="track-content">
@@ -122,10 +162,14 @@ const Home = () => {
             <div>작사.작곡 김도훈 / 편곡 최현경 최현규 신연태</div>
           </div>
           <div>
-            <img src="image/png/mp3.png" alt="mp3" className="mp3" />
+            <a href="https://drive.google.com/file/d/1-RlORIw_EncSTXGeRnRRz2Bu_oooSUxZ/view?usp=sharing">
+              <img src="image/png/mp3.png" alt="mp3" className="mp3" />
+            </a>
           </div>
           <div>
+            <a href="https://drive.google.com/file/d/10acgb9xlH3CKpUXQtJYQz5wuAGifqneN/view?usp=sharing">
             <img src="image/png/document.png" alt="악보" className="document" />
+            </a>
           </div>
         </div>
         <div className="track-content">
@@ -148,10 +192,14 @@ const Home = () => {
             <div>작사.작곡 서정완 / 편곡 김소린</div>
           </div>
           <div>
+            <a href="https://drive.google.com/file/d/1-X8cZ4JNy9zPk6OcHf4QwVEQAEhZ4GBr/view?usp=sharing">
             <img src="image/png/mp3.png" alt="mp3" className="mp3" />
+            </a>
           </div>
           <div>
+            <a href="https://drive.google.com/file/d/10_IPXNqTkUzgCJU9cl605tPKwurqbh-S/view?usp=sharing">
             <img src="image/png/document.png" alt="악보" className="document" />
+            </a>
           </div>
         </div>
         <div className="track-content">
@@ -172,10 +220,14 @@ const Home = () => {
             <div>작사.작곡 김도훈 / 편곡 이지혜</div>
           </div>
           <div>
-            <img src="image/png/mp3.png" alt="mp3" className="mp3" />
+            <a href="https://drive.google.com/file/d/1-Wlh1JmqAXy0M_kVJ72GGDixLtELwYuE/view?usp=sharing">
+              <img src="image/png/mp3.png" alt="mp3" className="mp3" />
+            </a>
           </div>
           <div>
+            <a href="https://drive.google.com/file/d/10ZvlX3N4BbYx7ZeAhlz-yWODXmiCCodS/view?usp=sharing">
             <img src="image/png/document.png" alt="악보" className="document" />
+            </a>
           </div>
         </div>
         <div className="track-content">
@@ -196,7 +248,9 @@ const Home = () => {
             </div>
           </div>
           <div>
+            <a href="https://drive.google.com/file/d/1-uRkofSEQJCYaKzp2Kw8ZkvrwYawRTo9/view?usp=sharing">
             <img src="image/png/mp3.png" alt="mp3" className="mp3" />
+            </a>
           </div>
         </div>
         <div className="track-list">
@@ -207,7 +261,9 @@ const Home = () => {
             </div>
           </div>
           <div>
-            <img src="image/png/mp3.png" alt="mp3" className="mp3" />
+            <a href="https://drive.google.com/file/d/1-XXujHXQySblCfDZNQrMUYoRCrEJdDFw/view?usp=sharing">
+              <img src="image/png/mp3.png" alt="mp3" className="mp3" />
+            </a>
           </div>
         </div>
         <div className="track-list">
@@ -218,7 +274,9 @@ const Home = () => {
             </div>
           </div>
           <div>
+            <a href="/아하나님">
             <img src="image/png/mp3.png" alt="mp3" className="mp3" />
+            </a>
           </div>
         </div>
         <div className="track-list">
@@ -229,7 +287,9 @@ const Home = () => {
             </div>
           </div>
           <div>
+            <a href="https://drive.google.com/file/d/107tjFGPDdeqJD7hF1kLdu0E_3MbdyYUM/view?usp=sharing">
             <img src="image/png/mp3.png" alt="mp3" className="mp3" />
+            </a>
           </div>
         </div>
         <div className="track-list">
@@ -240,7 +300,9 @@ const Home = () => {
             </div>
           </div>
           <div>
+            <a href="https://drive.google.com/file/d/10JWSibzIrfShl_t9IyGcybekvY1yNY28/view?usp=sharing">
             <img src="image/png/mp3.png" alt="mp3" className="mp3" />
+            </a>
           </div>
         </div>
         <div className="track-list">
@@ -251,10 +313,15 @@ const Home = () => {
             </div>
           </div>
           <div>
+            <a href="https://drive.google.com/file/d/1-GJiG9NUex0_X0L9tmybCZ6N-L1OK52v/view?usp=sharing">
             <img src="image/png/mp3.png" alt="mp3" className="mp3" />
+            </a>
           </div>
         </div>
         <p style={{ fontSize: "smaller", textAlign: "center", margin: "20px" }}>
+        CARVED IN MY SOUL [내 안에 새겨진] 앨범은 멜론, 유튜브 뮤직, 벅스, 지니 등 
+        <br />스트리밍 사이트에서도 들으실 수 있습니다.
+          <br />
           이 음반에 수록된 찬송가는 (재)한국찬송가공회의 허락을 받은 것입니다.{" "}
           <br />
           승인번호 : NO.41-067
@@ -336,8 +403,8 @@ const Home = () => {
         <div className="application-content">
           소리노을에서는 다음과 같은 봉사를 합니다.
           <p>
-            예배찬양 인도 <br />- 매주 9시, 11시 두번 드리는 예배를 여는 찬양을
-            인도합니다.
+          🧒🎤예배찬양 인도 <br />
+             - 매주 9시, 11시 두 번 드리는 예배를 여는 찬양을 인도합니다. 
           </p>
           <p>
             🎵헌금송, 워십 <br />- 캠프, 절기 예배 때마다 찬양과 워십댄스를
@@ -358,23 +425,39 @@ const Home = () => {
             바랍니다.
           </p>
           <p>
-            문의 : sorinoeul@gmail.com <button>소리노을 원서 다운로드</button>
+            문의 : sorinoeul@gmail.com 
+            <button className="document-down" onClick={handleNavigate}>
+                <img src="image/png/download.png" alt="다운로드" className="sono-document" />소리노을 원서 다운로드
+            </button>
           </p>
         </div>
       </div>
       <div className="high-school-box">
-        <h1>고등부 예배 안내</h1>
+        <h1 className="high-school-Worship">고등부 예배 안내</h1>
         <div className="high-school-image-box">
           <img src="image/png/highschool12.png" alt="고등12부" className="high-school-image" />
-          <div>
-            <ul>
+            <ul className="high12-ul">
                 <li>대상 : 고등학교 1,2학년</li>
                 <li>예배장소 : 제 2교육관 6층 야고보 성전</li>
                 <li>예배시간 : 1부 8시 30분, 2부 10시 30분</li>
                 <li>YOUTUBE : </li>
             </ul>
-          </div>
         </div>
+        <div className="high-school-image-box">
+          <img src="image/png/highschool3.png" alt="고등3부" className="high-school-image" />
+            <ul className="high12-ul">
+                <li>대상 : 고등학교 3학년</li>
+                <li>예배장소 : 비전센터 6층 브니엘 성전</li>
+                <li>예배시간 : 오전 8시 30분</li>
+                <li>YOUTUBE : </li>
+            </ul>
+        </div>
+      </div>
+      <div className="footer">
+        <img src="image/logo.png" alt="소리노을-로고" className="logo" />
+        <p className="footer-content">
+          ⓒ Sorinoeul 2023 Sorinoeul. All Rights Reserved.
+        </p>
       </div>
     </div>
   );
