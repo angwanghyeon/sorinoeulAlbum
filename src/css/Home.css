@@ -17,41 +17,33 @@
   height: 20vw;
 }
 .box1 {
-  text-align: right;
-  border: 1px solid black;
+  text-align: justify;
+  border: 1px solid lightgray;
+  box-shadow: inset 5px 5px 10px 3px #ccc;
   border-radius: 25px;
   margin: 20px auto;
-  width: 80vw;
-  height: 420px;
+  width: 90vw;
+  height: 350px;
   position: relative;
 }
 .lee-box {
-  width: 210px;
-  height: 400px;
+  width: 45vw;
+  height: 45vw;
   position: absolute;
   right: 5px;
-}
-.lee {
-  margin: 10px auto;
-  width: 200px;
-  height: 200px;
-  right: -50px;
+  background-image: url("../image/png/lee.png");
+  background-size: cover;
 }
 .lee-sign {
-  width: 200px;
-  height: 150px;
-  bottom: 80px;
-  right: 0px;
-  position: absolute;
+  width: 35vw;
+  height: 20vw;
+  background-image: url('../image/png/lee-sign.png');
+  background-size: cover;
 }
 .speech-box {
-  text-align: left;
-  margin: 0 auto;
-  width: 70vw;
+  text-align: justify;
+  width: 85vw;
   height: 150px;
-  position: absolute;
-  left: 5vw;
-  top: 300px;
 }
 .sorinoeul-introduction {
   width: 94vw;
@@ -62,8 +54,10 @@
   height: 90vw;
   margin: 20px auto;
   border: 1px solid lightgray;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px 3px #ccc;
+  border-radius: 25px;
+  box-shadow: inset 0px 5px 10px 3px #ccc;
+  background-image: url("../image/png/main-cover.png");
+  background-size: cover;
 }
 .album-cover {
   width: 100%;
@@ -193,44 +187,46 @@
     height: 20vw;
   }
   .box1 {
-    text-align: right;
-    border: 1px solid black;
+    text-align: justify;
+    border: 1px solid lightgray;
+    box-shadow: inset 0px 5px 5px 0px #ccc;
     border-radius: 25px;
     margin: 20px auto;
-    width: 80vw;
-    height: 420px;
+    width: 90vw;
+    height: 90vw;
     position: relative;
   }
   .lee-box {
-    width: 210px;
-    height: 400px;
-    position: absolute;
-    right: 5px;
-  }
-  .lee {
-    margin: 10px auto;
-    width: 200px;
-    height: 200px;
-    right: -50px;
+    width: 45vw;
+    height: 45vw;
+    background-image: url("../image/png/lee.png");
+    background-size: cover;
   }
   .lee-sign {
-    width: 200px;
-    height: 150px;
-    bottom: 80px;
-    right: 0px;
+    width: 35vw;
+    height: 20vw;
     position: absolute;
+    right: 0;
+    top: 55vw;
+    background-image: url('../image/png/lee-sign.png');
+    background-size: cover;
   }
   .speech-box {
-    text-align: left;
-    margin: 0 auto;
-    width: 70vw;
-    height: 150px;
+    text-align: justify;
+    width: 85vw;
     position: absolute;
-    left: 5vw;
-    top: 300px;
+    top: 45vw;
+    height: 30vw;
+    left: 2vw;
+  }
+  .lee{
+    position: absolute;
+    top: 70vw;
+    left: 2vw;
   }
   .sorinoeul-introduction {
-    width: 94vw;
+    text-align: justify;
+    width: 95vw;
     margin: 0 auto;
   }
   .album-cover-box {
@@ -238,8 +234,10 @@
     height: 90vw;
     margin: 20px auto;
     border: 1px solid lightgray;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px 3px #ccc;
+    border-radius: 25px;
+    box-shadow: inset 0px 5px 5px 0px #ccc;
+    background-image: url("../image/png/main-cover.png");
+    background-size: cover;
   }
   .album-cover {
     width: 100%;
@@ -414,8 +412,10 @@
     height: 90vw;
     margin: 20px auto;
     border: 1px solid lightgray;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px 3px #ccc;
+    border-radius: 25px;
+    box-shadow: inset 5px 5px 10px 3px #ccc;
+    background-size: cover;
+    background-image: url("../image/png/main-cover.png");
   }
   .album-cover {
     width: 100%;

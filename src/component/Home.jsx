@@ -2,26 +2,6 @@ import React, { useEffect, useState } from "react";
 import "../css/Home.css";
 
 const Home = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  const handleScroll = () => {
-    const scrollTop = window.scrollY;
-    setIsVisible(scrollTop > 100); // 예: 스크롤이 100px 이상이면 버튼 표시
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth' // 부드러운 스크롤 효과를 위해 추가
-    });
-  };
 
   const handleNavigate = () => {
     window.location.href = 'https://drive.google.com/file/d/1A87zuH6gP2gN9qV1AKYbPOAqlU4GpqaA/view?usp=sharing';
@@ -29,40 +9,31 @@ const Home = () => {
   
   return (
     <div className="container">
-      {isVisible && (
-        <button className="top-button" onClick={scrollToTop} style={{ position: 'fixed', bottom: '20px', right: '20px', zIndex: '1000' , borderRadius:'50%'}}>
-          Top
-        </button>
-      )}
       {/* <nav className="nav-bar">
         <img src="image/logo.png" alt="소리노을-로고" className="logo" />
       </nav> */}
       <div className="album-cover-box">
-        <img
-          src="image/png/main-cover.png"
-          alt="앨범 커버"
-          className="album-cover"
-        />
       </div>
       <div className="box1">
         <div className="lee-box">
-          <img src="image/png/lee.png" alt="이영훈 목사님" className="lee" />
-          <img src="image/png/lee-sign.png" alt="싸인" className="lee-sign" />
         </div>
         <div className="speech-box">
           할렐루야! <br />
           소리노을의 찬양을 통해 많은 사람들이 위로받고 주님께 돌아오는 일들이
           있기를 예수님의 이름으로 축복합니다. 교회학교 소리노을 찬양팀을
-          사랑하고 축복합니다. <br></br>
-          이영훈 목사 <br></br>
-          (여의도순복음교회 담임)
+          사랑하고 축복합니다. <br />
         </div>
+        <div className="lee-sign"></div>
+        <p className="lee">
+            이영훈 목사 <br />
+            (여의도순복음교회 담임)
+          </p>
       </div>
       <div className="sorinoeul-introduction">
         소리노을은 1984년부터 지금까지 여의도순복음교회 교회학교 고등부 예배를
         섬기고 있는 찬양팀입니다. <br />
         첫 앨범 '내 안에 새겨진'에는 다음 세대인 청소년들이 찬양을 통해 하나님을
-        더 깊이 만나고 더 기쁘게 예배하기를 소망하는 마음을 담았습니다. <br />
+        더 깊이 만나고 더 기쁘게 예배하기를 소망하는 마음을 담았습니다.
         앨범의 찬양들이 어떠한 예배의 자리에서도 우리 안에 새겨진 주님의 사랑을
         다시 기억하게 하고 우리 모두가 하나님께서 찾으시는 예배자로 결단하는
         은혜로 이어지기를 간절히 소망합니다.
@@ -319,12 +290,9 @@ const Home = () => {
           </div>
         </div>
         <p style={{ fontSize: "smaller", textAlign: "center", margin: "20px" }}>
-        CARVED IN MY SOUL [내 안에 새겨진] 앨범은 멜론, 유튜브 뮤직, 벅스, 지니 등 
+        CARVED IN MY SOUL 앨범은 멜론, 유튜브 뮤직, 벅스, 지니 등 
         <br />스트리밍 사이트에서도 들으실 수 있습니다.
           <br />
-          이 음반에 수록된 찬송가는 (재)한국찬송가공회의 허락을 받은 것입니다.{" "}
-          <br />
-          승인번호 : NO.41-067
         </p>
       </div>
       <div className="album-credit">
@@ -440,7 +408,7 @@ const Home = () => {
                 <li>대상 : 고등학교 1,2학년</li>
                 <li>예배장소 : 제 2교육관 6층 야고보 성전</li>
                 <li>예배시간 : 1부 8시 30분, 2부 10시 30분</li>
-                <li>YOUTUBE : </li>
+                <li>YOUTUBE : https://m.youtube.com/@highyfgc</li>
             </ul>
         </div>
         <div className="high-school-image-box">
@@ -449,7 +417,7 @@ const Home = () => {
                 <li>대상 : 고등학교 3학년</li>
                 <li>예배장소 : 비전센터 6층 브니엘 성전</li>
                 <li>예배시간 : 오전 8시 30분</li>
-                <li>YOUTUBE : </li>
+                <li>YOUTUBE : https://m.youtube.com/@user-ys5br4dg8n</li>
             </ul>
         </div>
       </div>
