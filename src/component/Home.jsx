@@ -9,9 +9,6 @@ const Home = () => {
   
   return (
     <div className="container">
-      {/* <nav className="nav-bar">
-        <img src="image/logo.png" alt="소리노을-로고" className="logo" />
-      </nav> */}
       <div className="album-cover-box">
       </div>
       <div className="box1">
@@ -25,8 +22,8 @@ const Home = () => {
         </div>
         <div className="lee-sign"></div>
         <p className="lee">
-            이영훈 목사 <br />
-            (여의도순복음교회 담임)
+           이영훈 목사 <br />
+          (여의도순복음교회 담임)
           </p>
       </div>
       <div className="sorinoeul-introduction">
@@ -60,10 +57,12 @@ const Home = () => {
           </div>
         </div>
         <div className="track-content">
-          <b>코러스</b> 김예은 도현희 도소희 김현종 여환희 남명준 김주영 유이레
-          황주영 <br />
-          <b>베이스</b> 이정훈 <br />
-          <b>드럼</b> 신연태 <br />
+          <div className="corus">
+            <b>코러스</b> 
+            <p>김예은 도현희 도소희 김현종 여환희 <br /> 남명준 김주영 유이레 황주영</p>
+          </div> 
+          <p><b>베이스</b> 이정훈 </p>
+          <p><b>드럼</b> 신연태 </p>
           <b>일렉기타</b> 이삭 <br />
           <b>어쿠스틱기타</b> 정이레 <br />
           <b>피아노</b> 최현경 <br />
@@ -144,9 +143,10 @@ const Home = () => {
           </div>
         </div>
         <div className="track-content">
-          <b>코러스</b> 양희경 김예은 여건희 도소희 김소린 남명준 여환희 유이레
-          황주영
-          <br />
+          <div className="corus">
+            <b>코러스</b> 
+            <p>양희경 김예은 여건희 도소희 김소린 남명준<br /> 여환희 유이레 황주영</p>
+          </div> 
           <b>키즈 코러스</b> 박성민 박소율 장하준 장하임 <br />
           <b>베이스</b> 황지성 <br />
           <b>드럼</b> 신연태 <br />
@@ -202,9 +202,13 @@ const Home = () => {
           </div>
         </div>
         <div className="track-content">
-          <b>코러스</b> 고동환 김예은 여건희 도현희 도소희 김현종 남명준 김주영
-          여환희 유이레 황주영
-          <br />
+          <div className="corus">
+            <b>코러스</b> 
+            <p>
+              고동환 김예은 여건희 도현희 도소희 김현종 남명준 <br /> 김주영
+              여환희 유이레 황주영
+            </p>
+          </div>
           <b>베이스</b> 안광현 <br />
           <b>드럼</b> 신연태 <br />
           <b>일렉기타</b> 최현규 <br />

@@ -1,190 +1,27 @@
-#credit-s {
-  display: flex;
-  align-items: baseline;
-  margin-bottom: 8px;
-}
-.container {
-  width: 100vw;
-  height: 4500px;
-}
-.nav-bar {
-  width: auto;
-  height: 100px;
-  background-color: beige;
-}
-.logo {
-  width: 20vw;
-  height: 20vw;
-}
-.box1 {
-  text-align: justify;
-  border: 1px solid lightgray;
-  box-shadow: inset 5px 5px 10px 3px #ccc;
-  border-radius: 25px;
-  margin: 20px auto;
-  width: 90vw;
-  height: 350px;
-  position: relative;
-}
-.lee-box {
-  width: 45vw;
-  height: 45vw;
-  position: absolute;
-  right: 5px;
-  background-image: url("../image/png/lee.png");
-  background-size: cover;
-}
-.lee-sign {
-  width: 35vw;
-  height: 20vw;
-  background-image: url('../image/png/lee-sign.png');
-  background-size: cover;
-}
-.speech-box {
-  text-align: justify;
-  width: 85vw;
-  height: 150px;
-}
-.sorinoeul-introduction {
-  width: 94vw;
-  margin: 0 auto;
-}
-.album-cover-box {
-  width: 90vw;
-  height: 90vw;
-  margin: 20px auto;
-  border: 1px solid lightgray;
-  border-radius: 25px;
-  box-shadow: inset 0px 5px 10px 3px #ccc;
-  background-image: url("../image/png/main-cover.png");
-  background-size: cover;
-}
-.album-cover {
-  width: 100%;
-}
-.track-list-container {
-  margin: 50px auto;
-  width: 100vw;
-}
-.Track-h1 {
-  margin-left: 15px;
-}
-.track-list {
-  width: 100vw;
-  display: grid;
-  grid-template-columns: 12.5vw 62.5vw 12.5vw 12.5vw;
-  background-color: #ddd;
-  padding: 5px;
-  line-height: 22px;
-}
-.track-number {
-  text-align: center;
-  height: 46px;
-  line-height: 46px;
-}
-.track-content{
-  width: 100vw;
-  padding: 5px;
-  border: 1px solid #eee;
-  background-color: #eee;
-}
 
-.mp3 {
-  width: 40px;
-  height: 40px;
-}
-.document {
-  width: 40px;
-  height: 40px;
-}
-.album-credit {
-  margin-left: 20px;
-  display: flex;
-  flex-direction: column;
-}
-.credit-p {
-  display: flex;
-  align-items: baseline;
-  margin-bottom: 8px;
-}
-.credit-p b {
-  margin-right: 8px;
-}
-.application {
-  width: 100vw;
-}
-.application-title {
-  margin-left: 15px;
-}
-.sono-char-box{
-  width: 100vw;
-  height: 90vw;
-}
-.sono-char {
-  width: 80vw;
-  height: 80vw;
-  padding: 0 10vw 10vw;
-}
-.application-content{
-  padding-left: 5vw;
-}
-.high-school-Worship{
-  margin-left: 5vw;
-}
-.high-school-image-box{
-  display: flex;
-  height: 50vw;
-}
-.high-school-image{
-  width: 45vw;
-  height: 40vw;
-  padding: 5vw;
-}
-.high12-ul{
-  padding: 6vw 5vw;
-  line-height: 4vw;
-}
-.footer{
-  text-align: center;
-}
-.footer-content{
-  margin: 0;
-  font-size: x-small;
-}
-.sono-document{
-  width: 12px;
-  height: 12px;
-}
-.document-down{
-  margin: 0 10px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  background-color: white;
-}
-.top-button{
-  width: 15vw;
-  height: 15vw;
-  background-color: rgb(197, 196, 219);
-}
-
+@import "../index.css";
 @media screen and (max-width: 467px) {
-  #credit-s {
-    display: flex;
-    align-items: baseline;
-    margin-bottom: 8px;
-  }
   .container {
-    width: 100vw;
-    height: 4500px;
-  }
-  .nav-bar {
-    width: auto;
-    height: 100px;
-    background-color: beige;
+    width: 100%;    
+    height: 3700px;
   }
   .logo {
-    width: 20vw;
-    height: 20vw;
+    width: 25vw;
+    height: 25vw;
+  }
+  .album-cover-box {
+    width: 90vw;
+    height: 90vw;
+    margin: 20px auto;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    box-shadow: inset 0px 5px 5px 0px #ccc;
+    background-image: url("../image/png/main-cover.png");
+    background-size: cover;
+    max-width: 100%;
+  }
+  .album-cover {
+    width: 100%;
   }
   .box1 {
     text-align: justify;
@@ -201,6 +38,7 @@
     height: 45vw;
     background-image: url("../image/png/lee.png");
     background-size: cover;
+    max-width: 100%;
   }
   .lee-sign {
     width: 35vw;
@@ -210,6 +48,7 @@
     top: 55vw;
     background-image: url('../image/png/lee-sign.png');
     background-size: cover;
+    max-width: 100%;
   }
   .speech-box {
     text-align: justify;
@@ -229,19 +68,6 @@
     width: 95vw;
     margin: 0 auto;
   }
-  .album-cover-box {
-    width: 90vw;
-    height: 90vw;
-    margin: 20px auto;
-    border: 1px solid lightgray;
-    border-radius: 25px;
-    box-shadow: inset 0px 5px 5px 0px #ccc;
-    background-image: url("../image/png/main-cover.png");
-    background-size: cover;
-  }
-  .album-cover {
-    width: 100%;
-  }
   .track-list-container {
     margin: 50px auto;
     width: 100vw;
@@ -253,22 +79,15 @@
     width: 100vw;
     display: grid;
     grid-template-columns: 12.5vw 62.5vw 12.5vw 12.5vw;
-    background-color: #ddd;
-    padding: 5px;
     line-height: 22px;
   }
   .track-number {
     text-align: center;
-    height: 46px;
-    line-height: 46px;
   }
   .track-content{
     width: 100vw;
     padding: 5px;
-    border: 1px solid #eee;
-    background-color: #eee;
   }
-
   .mp3 {
     width: 40px;
     height: 40px;
@@ -313,15 +132,17 @@
   }
   .high-school-image-box{
     display: flex;
+    width: 100vw;
     height: 50vw;
+    max-width: 100%;
   }
   .high-school-image{
-    width: 45vw;
-    height: 40vw;
+    width: 35vw;
+    height: 35vw;
     padding: 5vw;
+    max-width: 100%;
   }
   .high12-ul{
-    padding: 6vw 5vw;
     line-height: 4vw;
   }
   .footer{
@@ -340,167 +161,6 @@
     border: 1px solid #ddd;
     border-radius: 10px;
     background-color: white;
-  }
-  .top-button{
-    width: 15vw;
-    height: 15vw;
-    background-color: rgb(197, 196, 219);
-  }
-}
-@media screen and (max-width: 767px) and (min-width: 468px) {
-  #credit-s {
-    display: flex;
-    align-items: baseline;
-    margin-bottom: 8px;
-  }
-  .container {
-    width: 100vw;
-    height: 4500px;
-  }
-  .nav-bar {
-    width: auto;
-    height: 100px;
-    background-color: beige;
-  }
-  .logo {
-    width: 15vw;
-    height: 15vw;
-  }
-  .box1 {
-    text-align: right;
-    border: 1px solid black;
-    border-radius: 25px;
-    margin: 20px auto;
-    width: 80vw;
-    height: 420px;
-    position: relative;
-  }
-  .lee-box {
-    width: 210px;
-    height: 400px;
-    position: absolute;
-    right: 5px;
-  }
-  .lee {
-    margin: 10px auto;
-    width: 200px;
-    height: 200px;
-    right: -50px;
-  }
-  .lee-sign {
-    width: 200px;
-    height: 150px;
-    bottom: 80px;
-    right: 0px;
-    position: absolute;
-  }
-  .speech-box {
-    text-align: left;
-    margin: 0 auto;
-    width: 70vw;
-    height: 150px;
-    position: absolute;
-    left: 5vw;
-    top: 300px;
-  }
-  .sorinoeul-introduction {
-    width: 94vw;
-    margin: 0 auto;
-  }
-  .album-cover-box {
-    width: 90vw;
-    height: 90vw;
-    margin: 20px auto;
-    border: 1px solid lightgray;
-    border-radius: 25px;
-    box-shadow: inset 5px 5px 10px 3px #ccc;
-    background-size: cover;
-    background-image: url("../image/png/main-cover.png");
-  }
-  .album-cover {
-    width: 100%;
-  }
-  .track-list-container {
-    margin: 50px auto;
-    width: 100vw;
-  }
-  .Track-h1 {
-    margin-left: 15px;
-  }
-  .track-list {
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 12.5vw 62.5vw 12.5vw 12.5vw;
-    background-color: #ddd;
-    padding: 5px;
-    line-height: 22px;
-  }
-  .track-number {
-    text-align: center;
-    height: 46px;
-    line-height: 46px;
-  }
-  .track-content{
-    width: 100vw;
-    padding: 5px;
-    border: 1px solid #eee;
-    background-color: #eee;
-  }
-
-  .mp3 {
-    width: 40px;
-    height: 40px;
-  }
-  .document {
-    width: 40px;
-    height: 40px;
-  }
-  .album-credit {
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  .credit-p {
-    display: flex;
-    align-items: baseline;
-    margin-bottom: 8px;
-  }
-  .credit-p b {
-    margin-right: 8px;
-  }
-  .application {
-    width: 100vw;
-  }
-  .application-title {
-    margin-left: 15px;
-  }
-  .sono-char-box{
-    width: 100vw;
-    height: 90vw;
-  }
-  .sono-char {
-    width: 80vw;
-    height: 80vw;
-    padding: 0 10vw 10vw;
-  }
-  .application-content{
-    padding-left: 5vw;
-  }
-  .high-school-Worship{
-    margin-left: 5vw;
-  }
-  .high-school-image-box{
-    display: flex;
-    height: 50vw;
-  }
-  .high-school-image{
-    width: 45vw;
-    height: 40vw;
-    padding: 5vw;
-  }
-  .high12-ul{
-    padding: 6vw 5vw;
-    line-height: 4vw;
   }
   .top-button{
     width: 15vw;
