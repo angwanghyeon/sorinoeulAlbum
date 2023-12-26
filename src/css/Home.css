@@ -82,6 +82,7 @@
   .track-content{
     width: 80vw;
     padding: 5px;
+    margin: 0 0 10vw 0;
   }
   .mp3 {
     width: 10vw;
