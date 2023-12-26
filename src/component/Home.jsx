@@ -13,6 +13,8 @@ const Home = () => {
       </div>
       <div className="box1">
         <div className="lee-box">
+          <img src="image/png/lee.png" alt="이영훈 목사님 사진" 
+          style={{width:'35vw', height:'35vw', maxWidth:'100%'}} />
         </div>
         <div className="speech-box">
           할렐루야! <br />
@@ -20,7 +22,10 @@ const Home = () => {
           있기를 예수님의 이름으로 축복합니다. 교회학교 소리노을 찬양팀을
           사랑하고 축복합니다. <br />
         </div>
-        <div className="lee-sign"></div>
+        <div className="lee-sign">
+          <img src="image/png/lee-sign.png" alt="이영훈 목사님 싸인 사진" 
+          style={{width:'25vw', height:'30vw', maxWidth:'100%'}}/>
+        </div>
         <p className="lee">
            이영훈 목사 <br />
           (여의도순복음교회 담임)
@@ -293,74 +298,77 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <p style={{ fontSize: "smaller", textAlign: "center", margin: "20px" }}>
+        <p style={{ fontSize: "smaller", textAlign: "center", margin:'2vw 0'}}>
         CARVED IN MY SOUL 앨범은 멜론, 유튜브 뮤직, 벅스, 지니 등 
         <br />스트리밍 사이트에서도 들으실 수 있습니다.
           <br />
         </p>
       </div>
       <div className="album-credit">
-        <h1>ALBUM CREDIT</h1>
-        <div className="credit-p">
-          <b>Executive Producer</b>박진구
+        <h1 className="credit-title">ALBUM CREDIT</h1>
+        <div className="credit-p-s">
+          <p><b>Executive Producer</b></p><p>박진구</p>
         </div>
-        <div className="credit-p">
-          <b>Producer </b>양희경
+        <div className="credit-p-s">
+          <p><b>Producer </b></p><p>양희경</p>
         </div>
-        <div className="credit-p">
-          <b>Music Director </b>이지혜 최현경 김소린
+        <div className="credit-p-s">
+          <p><b>Music Director </b></p><p>이지혜 최현경 김소린</p>
         </div>
-        <div className="credit-p" id="credit-s">
-          <b>Vocal Director & Chorus Arrangement </b>이지혜 최현경 김소린 양희경
+        <div className="credit-p-l">
+          <p><b>Vocal Director & Chorus Arrangement </b></p><p>이지혜 최현경 김소린 양희경</p>
         </div>
-        <div className="credit-p">
-          <b>Music Director </b>이지혜 최현경 김소린
+        <div className="credit-p-s">
+          <p><b>Music Director </b></p><p>이지혜 최현경 김소린</p>
         </div>
-        <div className="credit-p">
-          <b>E.Guitar </b>이삭 최현규
+        <div className="credit-p-s">
+          <p><b>E.Guitar </b></p><p>이삭 최현규</p>
         </div>
-        <div className="credit-p">
-          <b>A.Guitar </b>정이레
+        <div className="credit-p-s">
+          <p><b>A.Guitar </b></p><p>정이레</p>
         </div>
-        <div className="credit-p">
-          <b>E.Bass </b>이정훈 안광현 황지성
+        <div className="credit-p-s">
+          <p><b>E.Bass </b></p><p>이정훈 안광현 황지성</p>
         </div>
-        <div className="credit-p">
-          <b>Drums </b>신연태 김승연
+        <div className="credit-p-s">
+          <p><b>Drums </b></p><p>신연태 김승연</p>
         </div>
-        <div className="credit-p">
-          <b>Piano </b>이지혜 최현경 김소린
+        <div className="credit-p-s">
+          <p><b>Piano </b></p><p>이지혜 최현경 김소린</p>
         </div>
-        <div className="credit-p">
-          <b>Keyboard </b>이지혜 최현경 김소린 안예원
+        <div className="credit-p-s">
+          <p><b>Keyboard </b></p><p>이지혜 최현경 김소린 안예원</p>
         </div>
-        <div className="credit-p">
-          <b>Vocals </b>양희경 윤소정 고동환 김예은 여건희 도현희
+        <div className="credit-p-s">
+          <p><b>Vocals </b></p><p>양희경 윤소정 고동환 김예은 여건희 도현희</p>
         </div>
-        <div className="credit-p">
-          <b>Chorus </b>양희경 고동환 여건희 도현희 도소희 김현종 여환희 김소린
-          남명준 김주영 유이레 황주영
+        <div className="credit-p-s">
+          <p><b>Chorus </b></p>
+          <p>
+            양희경 고동환 여건희 도현희 도소희 김현종 <br /> 여환희 김소린
+            남명준 김주영 유이레 황주영
+          </p>
         </div>
-        <div className="credit-p">
-          <b>Kids Chorus </b>박성민 박소율 장하준 장하임
+        <div className="credit-p-s">
+          <p><b>Kids Chorus </b></p><p>박성민 박소율 장하준 장하임</p>
         </div>
-        <div className="credit-p">
-          <b>String & Brass programing by Room10 </b>해빈 준경
+        <div className="credit-p-s">
+          <p><b>String & Brass programing by Room10 </b></p><p>해빈 준경</p>
         </div>
-        <div className="credit-p">
-          <b>Recording Director </b>오경환 @Sorinoeul Studio
+        <div className="credit-p-s">
+          <p><b>Recording Director </b></p><p>오경환 @Sorinoeul Studio</p>
         </div>
-        <div className="credit-p">
-          <b>Recorded Engineer </b>김택진 @Sorinoeul Studio
+        <div className="credit-p-s">
+          <p><b>Recorded Engineer </b></p><p>김택진 @Sorinoeul Studio</p>
         </div>
-        <div className="credit-p">
-          <b>Mixed by </b>장영환 @Sorinoeul Studio
+        <div className="credit-p-s">
+          <p><b>Mixed by </b></p><p>장영환 @Sorinoeul Studio</p>
         </div>
-        <div className="credit-p">
-          <b>Mastered by </b>박정언 @Honey Butter Studio
+        <div className="credit-p-s">
+          <p><b>Mastered by </b></p><p>박정언 @Honey Butter Studio</p>
         </div>
-        <div className="credit-p">
-          <b>Art Work & Design </b>김소린
+        <div className="credit-p-s">
+          <p><b>Art Work & Design </b></p><p>김소린</p>
         </div>
       </div>
       <div className="application">
